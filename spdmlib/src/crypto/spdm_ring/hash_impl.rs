@@ -35,7 +35,6 @@ fn hash_all(base_hash_algo: SpdmBaseHashAlgo, data: &[u8]) -> Option<SpdmDigestS
 #[cfg(feature = "hashed-transcript-data")]
 mod hash_ext {
     use super::*;
-    use alloc::boxed::Box;
     use alloc::collections::BTreeMap;
     use lazy_static::lazy_static;
     use spin::Mutex;

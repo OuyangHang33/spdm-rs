@@ -13,8 +13,6 @@ use crate::protocol::{
 };
 use codec::{u24, Codec, Reader, Writer};
 use core::fmt::Debug;
-extern crate alloc;
-use alloc::boxed::Box;
 
 pub trait SpdmCodec: Debug + Sized {
     /// Encode yourself by appending onto `bytes`.

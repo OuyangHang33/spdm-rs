@@ -239,8 +239,6 @@ pub mod asym_verify {
 }
 
 pub mod dhe {
-    extern crate alloc;
-    use alloc::boxed::Box;
 
     use super::CRYPTO_DHE;
     use crate::crypto::{SpdmDhe, SpdmDheKeyExchange};

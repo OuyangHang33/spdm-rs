@@ -4,9 +4,6 @@
 
 use crate::error::SpdmResult;
 
-extern crate alloc;
-use alloc::boxed::Box;
-
 use crate::protocol::{
     SpdmAeadAlgo, SpdmAeadIvStruct, SpdmAeadKeyStruct, SpdmBaseAsymAlgo, SpdmBaseHashAlgo,
     SpdmDheAlgo, SpdmDheExchangeStruct, SpdmDheFinalKeyStruct, SpdmDigestStruct,

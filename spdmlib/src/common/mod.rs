@@ -11,7 +11,6 @@ use crate::message::SpdmRequestResponseCode;
 use crate::{crypto, protocol::*};
 use spin::Mutex;
 extern crate alloc;
-use alloc::boxed::Box;
 use alloc::sync::Arc;
 use core::ops::DerefMut;
 

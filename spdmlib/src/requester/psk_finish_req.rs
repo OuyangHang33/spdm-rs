@@ -9,8 +9,6 @@ use crate::error::{
 use crate::message::*;
 use crate::protocol::*;
 use crate::requester::*;
-extern crate alloc;
-use alloc::boxed::Box;
 
 impl RequesterContext {
     #[maybe_async::maybe_async]

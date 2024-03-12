@@ -2,9 +2,6 @@
 //
 // SPDX-License-Identifier: Apache-2.0 or MIT
 
-extern crate alloc;
-use alloc::vec::Vec;
-
 use core::convert::TryInto;
 
 mod algo;

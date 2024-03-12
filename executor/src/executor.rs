@@ -6,7 +6,7 @@
 
 extern crate alloc;
 use {
-    alloc::{boxed::Box, collections::vec_deque::VecDeque, sync::Arc},
+    alloc::{collections::vec_deque::VecDeque, sync::Arc},
     core::{
         future::Future,
         pin::Pin,

@@ -9,8 +9,6 @@
 mod executor;
 use crate::executor::*;
 use core::future::Future;
-extern crate alloc;
-use alloc::boxed::Box;
 use core::task::Poll;
 
 pub fn run<T>(future: impl Future<Output = T> + 'static + Send) -> Poll<T>

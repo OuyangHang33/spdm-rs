@@ -5,16 +5,10 @@
 use crate::common::session::SpdmSession;
 use crate::common::{ManagedBuffer12Sign, SpdmCodec};
 use crate::crypto;
-use crate::error::SpdmResult;
-use crate::error::SPDM_STATUS_CRYPTO_ERROR;
-use crate::error::SPDM_STATUS_INVALID_MSG_FIELD;
-use crate::error::SPDM_STATUS_INVALID_STATE_LOCAL;
 use crate::error::*;
 use crate::message::*;
 use crate::protocol::*;
 use crate::responder::*;
-extern crate alloc;
-use alloc::boxed::Box;
 
 impl ResponderContext {
     pub fn handle_spdm_finish<'a>(

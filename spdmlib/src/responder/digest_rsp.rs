@@ -5,16 +5,13 @@
 use crate::common::SpdmCodec;
 use crate::common::SpdmConnectionState;
 use crate::crypto;
+use crate::error::SpdmResult;
 use crate::error::SPDM_STATUS_INVALID_MSG_FIELD;
 use crate::error::SPDM_STATUS_INVALID_STATE_LOCAL;
 use crate::error::SPDM_STATUS_INVALID_STATE_PEER;
 use crate::message::*;
 use crate::protocol::*;
 use crate::responder::*;
-extern crate alloc;
-use crate::error::SpdmResult;
-use crate::protocol::gen_array_clone;
-use alloc::boxed::Box;
 
 impl ResponderContext {
     pub fn handle_spdm_digest<'a>(

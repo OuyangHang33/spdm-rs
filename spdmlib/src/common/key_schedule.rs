@@ -4,10 +4,8 @@
 
 use crate::crypto;
 use crate::protocol::*;
-use codec::{Codec, Writer};
-extern crate alloc;
 use crate::secret;
-use alloc::boxed::Box;
+use codec::{Codec, Writer};
 
 const MAX_BIN_CONCAT_BUF_SIZE: usize = 2 + 8 + 12 + SPDM_MAX_HASH_SIZE;
 const SALT_0: [u8; SPDM_MAX_HASH_SIZE] = [0u8; SPDM_MAX_HASH_SIZE];
