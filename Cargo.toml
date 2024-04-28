@@ -7,6 +7,8 @@ default-members = [
     "sys_time",
     "test/spdm-requester-emu",
     "test/spdm-responder-emu",
+    "test/spdm-requester-emu-rollback",
+    "test/spdm-responder-emu-rollback",
 ]
 
 members = [
@@ -18,6 +20,8 @@ members = [
     "tdisp",
     "test/spdm-requester-emu",
     "test/spdm-responder-emu",
+    "test/spdm-requester-emu-rollback",
+    "test/spdm-responder-emu-rollback",
     "test/spdmlib-test",
 
     "fuzz-target/responder/version_rsp",
